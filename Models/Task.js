@@ -11,8 +11,8 @@ const TaskScheme = mongoose.Schema({
      },
      status: {
         type: String,
-        default: "Under-Review"
+        default: "under-review"
      }
 })
 
-export default mongoose.model.Task || mongoose.model("Task", TaskScheme)
+export default mongoose.models.Task || mongoose.model("Task", TaskScheme)
